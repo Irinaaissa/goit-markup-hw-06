@@ -347,17 +347,20 @@ a {
 
 .photo {
   background-color: #f4f4fd;
-  padding: 96px 28px;
+  padding: 96px 0;
   /* padding-top: 120px; */
   /* padding-bottom: 120px; */
 }
-
+.our-team{
+  width: 296px;
+}
 .photo-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   /* margin-top: 8px; */
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .photo-name-text,
@@ -366,16 +369,15 @@ a {
 }
 
 .photo-name-text {
-  display: flex;
-  width: 232px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 8px;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* gap: 8px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -386,15 +388,10 @@ a {
 .photo-team {
   /* display: flex; */
   /* column-gap: 24px; */
-  width: 264px;
   column-gap: 72px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 0px 0px 4px 4px;
 
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .photo-title {
@@ -423,6 +420,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  padding-bottom: 8px;
   /* margin-bottom: 8px; */
 }
 
@@ -434,8 +432,8 @@ a {
   display: flex;
   /* padding-top: 8px; */
   gap: 24px;
-  justify-content: space-between;
-  padding-bottom: 32px;
+  justify-content: center;
+  
 }
 
 .icons-photo {
