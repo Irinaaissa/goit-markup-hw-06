@@ -22,6 +22,11 @@
 <body>
   <!-- Header -->
   <header class="header">
+    <button class="form-button-header" type="button">
+      <svg class="menu-black " width="24" height="24">
+        <use href="./images/icons.svg#icon-icon-menu"></use>
+      </svg>
+    </button>
     <div class="header-container-my container">
       <nav class="header-container">
         <a class="header-title" href="./index.html">Web<span class="accent">Studio</span></a>
@@ -41,10 +46,10 @@
       <address class="address">
         <ul class="header-link-address">
           <li>
-            <a class="contakt-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a class="contakt-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
@@ -64,7 +69,7 @@
     </section>
     <!-- Description -->
     <section class="container-description-my">
-      <div class="container">
+      <div class="container element">
         <h2 class="visually-hidden itle-description">Description</h2>
         <ul class="container-description">
           <li class="description-list">
@@ -297,7 +302,7 @@
             </div>
 
             <div class="photo-name-portfolio">
-              <h3 class="hicture-title">Banking App</h3>
+              <h3 class="picture-title">Banking App</h3>
               <p class="portfolio-text">App</p>
             </div>
           </li>
@@ -312,7 +317,7 @@
               </p>
             </div>
             <div class="photo-name-portfolio">
-              <h3 class="hicture-title">Cashless Payment</h3>
+              <h3 class="picture-title">Cashless Payment</h3>
               <p class="portfolio-text">Marketing</p>
             </div>
           </li>
@@ -326,7 +331,7 @@
               </p>
             </div>
             <div class="photo-name-portfolio">
-              <h3 class="hicture-title">Meditation App</h3>
+              <h3 class="picture-title">Meditation App</h3>
               <p class="portfolio-text">App</p>
             </div>
           </li>
@@ -340,7 +345,7 @@
               </p>
             </div>
             <div class="photo-name-portfolio">
-              <h3 class="hicture-title">Taxi Service</h3>
+              <h3 class="picture-title">Taxi Service</h3>
               <p class="portfolio-text">Marketing</p>
             </div>
           </li>
@@ -355,7 +360,7 @@
               </p>
             </div>
             <div class="photo-name-portfolio">
-              <h3 class="hicture-title">Screen Illustrations</h3>
+              <h3 class="picture-title">Screen Illustrations</h3>
               <p class="portfolio-text">Design</p>
             </div>
           </li>
@@ -369,7 +374,7 @@
               </p>
             </div>
             <div class="photo-name-portfolio">
-              <h3 class="hicture-title">Online Courses</h3>
+              <h3 class="picture-title">Online Courses</h3>
               <p class="portfolio-text">Marketing</p>
             </div>
           </li>
@@ -426,6 +431,7 @@
         </ul>
       </div>
       <div class="form-text-footer">
+        <div class="form-subscribe-footer">
         <p class="form-subscribe"> Subscribe</p>
         <form class="form">
 
@@ -433,6 +439,7 @@
 
             <input class="form-input" type="email" name="email" placeholder="E-mail" />
           </label>
+        </div>
           <button class="form-button" type="submit">Subscribe
             <svg class="social-icons-color frame " width="24" height="24">
               <use href="./images/icons.svg#icon-Frame"></use>
@@ -445,8 +452,8 @@
 
   </footer>
   <!-- modal window -->
-  <div class="modal">
-    <div class="modal-window">
+  <div class="modal ">
+    <div class="modal-window ">
       <button class="form-button-modal" type="button">
         <svg class="close-black " width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
@@ -512,8 +519,68 @@
     </div>
   </div>
 
- 
-
+ <!-- menu-window -->
+ <div class="viewport-menu ">
+<div class="menu-window ">
+  <button class="form-button-menu" type="button">
+    <svg class="close-black " width="8" height="8">
+      <use href="./images/icons.svg#icon-close-black"></use>
+    </svg>
+  </button>
+  <ul class="header-link-menu">
+    <li class="post-link-menu">
+      <a class="post-link-header word" href="./index.
+  html">Studio</a>
+    </li>
+    <li class="post-link-menu">
+      <a class="post-link-header" href="">Portfolio</a>
+    </li>
+    <li class="post-link-menu">
+      <a class="post-link-header" href="">Contacts</a>
+    </li>
+  </ul>
+  <address class="address-menu">
+    <ul class="header-link-address-menu">
+      <li>
+        <a class="contact-link-menu " href="mailto:info@devstudio.com"><span class="word">info@devstudio.com</span></a>
+      </li>
+      <li>
+        <a class="contact-link-menu " href="tel:+110001111111">+11 
+  (000) 111-11-11</a>
+      </li>
+    </ul>
+  </address>
+  <ul class="icons-menu">
+    <li class="footer-social-icons">
+      <a class="social-icons" href="https://www.instagram.com/" target="_blank">
+        <svg class="social-icons-color" width="24" height="24">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="footer-social-icons">
+      <a class="social-icons" href="https://www.twitter.com/" target="_blank">
+        <svg class="social-icons-color" width="24" height="24">
+          <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="footer-social-icons">
+      <a class="social-icons" href="https://www.facebook.com/" target="_blank">
+        <svg class="social-icons-color" width="24" height="24">
+          <use href="./images/icons.svg#icon-facebook-icon"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="footer-social-icons">
+      <a class="social-icons" href="https://www.linkedin.com/" target="_blank">
+        <svg class="social-icons-color" width="24" height="24">
+          <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+      </a>
+    </li>
+</div>
+</div>
 </body>
 
 </html>
