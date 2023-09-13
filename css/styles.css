@@ -1158,15 +1158,17 @@ a {
   transition-delay: 0ms, 150ms;
 }
 
-/* 768 */
+/*============= 768 ===============*/
 @media (min-width: 768px) and (max-width: 1157px){
   body{
     min-width: 768px;
-  margin: 0;
   }
-  
+  .container {
+    min-width: 768px; 
+  }
+
 .post-title{
-width: 496px;
+  
 }
 .form-button-header{
   display: none;
