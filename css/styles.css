@@ -115,6 +115,10 @@ a {
   /* display: flex; */
   display: none;
 }
+.header-link-menu {
+  margin-top: 72px;
+  row-gap: 40px;
+}
 
 .header-link-address {
   display: flex;
@@ -470,7 +474,7 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* portfolio-photo */
+/*========================================= portfolio-photo===============================================*/
 
 .container-photo {
   border: 1px solid #e7e9fc;
@@ -555,6 +559,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 
   /* margin-bottom: 8px; */
 }
@@ -603,10 +608,16 @@ a {
   align-self: stretch;
 }
 
-/* footer */
+/*========================================== footer============================================ */
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
+}
+
+.footer-my {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 
 .footer-text {
@@ -671,11 +682,6 @@ a {
 
 }
 
-.footer-my {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-}
 
 .footer-icons .social-icons {
   display: flex;
@@ -719,7 +725,7 @@ a {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  gap: 16px;
+  
 }
 
 .form-subscribe {
@@ -775,6 +781,7 @@ a {
   border: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
 }
 
 .frame {
@@ -784,7 +791,7 @@ a {
   margin-left: 16px;
 }
 
-/*  modal window*/
+/* ================================ modal window=================================================*/
 .modal {
   position: fixed;
   top: 0;
@@ -1090,11 +1097,6 @@ a {
   padding: 0;
 }
 
-.header-link-menu {
-  margin-top: 72px;
-
-  row-gap: 40px;
-}
 
 .word {
   color: #404bbf;
@@ -1158,8 +1160,8 @@ a {
   transition-delay: 0ms, 150ms;
 }
 
-/*============= 768 ===============*/
-@media (min-width: 768px) and (max-width: 1157px){
+/*============================================768======================================= ===============*/
+@media (min-width: 768px) {
   body{
     min-width: 768px;
   }
@@ -1167,9 +1169,7 @@ a {
     min-width: 768px; 
   }
 
-.post-title{
-  
-}
+/* ==========================================header 768 ============================================ */
 .form-button-header{
   display: none;
 }
@@ -1182,6 +1182,7 @@ a {
   margin-right: 16px;
   
 }
+
 .header-link-address{
   display:block;
 
@@ -1204,24 +1205,46 @@ a {
 flex-direction:row;
 gap: 72px;
 }
-.container-description {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  column-gap: 24px;
-  row-gap: 72px;
-  margin: 96px 0;
-  /* gap: 24px; */
-  /* padding-top: auto; */
+/*================ =====================Hero section 768====================================== */
+.title-container {
+  flex-direction: column; 
+  display: flex;   
 }
+.post-title{
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
+  line-height: 1.07; 
+  font-size: 56px; 
+  margin-bottom:36px;
+}
+
+/* ======================================description 768===================================================== */
+
+
 .description-list{
   width: 356px;
 }
-.photo {
-  padding-left: 16px;
-  padding-right: 16px;
+.container-description-my{
+  width: 100%;
 }
+.container-description {
+  flex-direction: row;
+  flex-basis:calc((100% - 24px) / 2);
+  flex-wrap: wrap;
+  column-gap:24px;
+  row-gap: 72px;
+  align-items: stretch;
+
+
+}
+
+.description-title {
+  text-align: start;
+}
+/* ============================================photo768========================================= */
+
 .photo-team {
   display: flex; 
   flex-wrap: wrap;
@@ -1230,24 +1253,22 @@ gap: 72px;
   row-gap: 64px;
   justify-content: center;
 }
-.photo-name-text{
+/* =========================================portfolio 768==================================================== */
+
+
+.portfolio-photo-product{
+
 display: flex;
-width: 232px;
-flex-direction: column;
+flex-wrap: wrap; 
+flex-direction:row;
+row-gap: 72px;
+column-gap: 24px;
 justify-content: center;
-align-items: center;
-margin-left: auto;
-margin-right: auto;
-gap: 8px;
 }
-.portfolio-photo-product {
-  display: flex;
-  flex-wrap: wrap; 
-  flex-direction:row;
-  row-gap: 72px;
-  column-gap: 24px;
-  justify-content: center;
-}
+
+/* ============================================footer768=================================================== */
+
+
 .footer {
   width: 100%;
 }
@@ -1258,8 +1279,8 @@ gap: 8px;
   row-gap: 72px;
   column-gap: 24px;
   justify-content: flex-start;
-  padding-left: 96px;
-  padding-right: 96px;
+  padding-left: 108px;
+  padding-right: 108px;
 }
 .footer-title {
   justify-content:flex-start;
@@ -1268,9 +1289,6 @@ gap: 8px;
   margin: 0;
 }
 .social-media-list {
-  /* padding-top: 100px; */
-  /* padding-right: 80px; */
-  
   margin: 0;
 }
 .social-media {
@@ -1280,11 +1298,9 @@ gap: 8px;
 
 }
 .form-text-footer {
-  display: flex;
   flex-direction:row;
   margin:0;
-  
-  
+  gap: 24px;
 }
 .form-subscribe-footer{
   display: flex;
@@ -1298,7 +1314,11 @@ gap: 8px;
 }
 .form-button {
   margin-top: 40px;
+}
 
-
+.modal-window {
+  min-height: 584px;
+  width: 408px; 
+  padding: 72px 24px 24px 24px;
 }
 }
