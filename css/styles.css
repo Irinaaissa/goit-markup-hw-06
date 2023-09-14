@@ -36,7 +36,7 @@ a {
   font-family: inherit;
 }
 
-/* header */
+/*============================================ header================================================ */
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -83,7 +83,6 @@ a {
 
 .header-container {
   align-items: center;
-  /* display: flex; */
   padding-left: 16px;
 }
 
@@ -191,36 +190,29 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  min-width: 320px;
 }
 
 /* Maim */
-/* Hero section */
+/* =============================================Hero section ============================================*/
 
 .title {
   background-color: #2e2f42;
   background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-    url(../images/photo/people-office.jpg);
+    url(../images/photo/people-office.jpg),
+    url(../images/photo/people-office@2x.jpg );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   display: flex;
   width: 100%;
-  padding-top: 112px; 
-  padding-bottom: 112px; 
+  padding-top: 72px; 
+  padding-bottom: 72px; 
   margin: 0 auto;
 }
 
-.title-container {
-  /* flex-direction: column; */
-  /* display: flex; */
-  /* gap: 40px; */
-  /* margin: 0 auto; */
- 
- 
-}
 
 .post-title {
   color: #fff;
@@ -235,7 +227,7 @@ a {
   font-size: 36px;
   line-height: 1.11;
   margin-bottom: 72px;
-  text-transform: capitalize;
+
   width: 100%;
 }
 
@@ -267,7 +259,7 @@ a {
   transition-delay: 0ms, 150ms;
 }
 
-/* Description */
+/* =============================================Description ==========================================*/
 .container-description-my {
   /* padding: 120px 0; */
   display: flex;
@@ -281,7 +273,7 @@ a {
 
 }
 .description-list {
-  /* width: calc((100% - 72px) / 4); */
+  
   width: 100%;
 }
 
@@ -347,7 +339,7 @@ a {
   display: none;
 }
 
-/* Photo */
+/*============================================== Photo ==========================================================*/
 
 .photo {
   background-color: #f4f4fd;
@@ -367,10 +359,6 @@ a {
   padding-bottom: 8px;
 }
 
-.photo-name-text,
-.photo-name-description {
-  /* padding: 32px 0; */
-}
 
 .photo-name-text {
   /* display: flex; */
@@ -611,7 +599,8 @@ a {
 /*========================================== footer============================================ */
 .footer {
   background-color: #2e2f42;
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-my {
@@ -651,17 +640,12 @@ a {
 }
 
 .footer-text-title {
-  /* padding-top: 100px; */
-  /* padding-right: 120px; */
-
   margin-left: auto;
   margin-right: auto;
 
 }
 
 .social-media-list {
-  /* padding-top: 100px; */
-  /* padding-right: 80px; */
   margin: 72px auto;
 
 }
@@ -1160,7 +1144,18 @@ a {
   transition-delay: 0ms, 150ms;
 }
 
+
 /*============================================768======================================= ===============*/
+
+@media (min-resolution: 192dpi) {
+  .title {
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url('../images/photo/people-office@2x.jpg');
+  } 
+}
+  
+
 @media (min-width: 768px) {
   body{
     min-width: 768px;
@@ -1185,9 +1180,8 @@ a {
 
 .header-link-address{
   display:block;
-
- 
 }
+
 .header-container-my{
   display: flex;
   width: 100%;
@@ -1206,6 +1200,10 @@ flex-direction:row;
 gap: 72px;
 }
 /*================ =====================Hero section 768====================================== */
+.title{
+  padding-top: 112px; 
+  padding-bottom: 112px; 
+}
 .title-container {
   flex-direction: column; 
   display: flex;   
@@ -1218,6 +1216,7 @@ gap: 72px;
   line-height: 1.07; 
   font-size: 56px; 
   margin-bottom:36px;
+  text-transform:none;
 }
 
 /* ======================================description 768===================================================== */
@@ -1321,4 +1320,105 @@ justify-content: center;
   width: 408px; 
   padding: 72px 24px 24px 24px;
 }
+}
+/* ================================================1158============================================ */
+@media (min-width: 1158px) {
+  body{
+    min-width: 1158px;
+  }
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+.header-container {
+  display: flex;
+}
+.contact-link {
+  padding: 24px 0;
+}
+.address{
+  display: flex;
+  flex-wrap:nowrap;
+  margin-right: 16px;
+}
+.header-link-address{
+  display:flex;
+  gap: 40px;
+}
+/* ===================================== Hero section 1158      =========================================== */
+.title{
+    padding-top: 188px; 
+    padding-bottom: 188px; 
+}
+.post-title{
+  margin-bottom:48px;
+  
+}
+/* =======================================description 1158========================================== */
+.container-description {
+  flex-basis:calc((100% - 72px) / 4);
+  flex-wrap:nowrap;
+  column-gap:24px;
+  align-items: baseline;
+}
+.icons-description{
+  display: flex;
+}
+.container-description-my {
+  padding: 120px 0; 
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.photo-stile{
+width: calc((100% - 72px) / 4);
+}
+/* =======================================photo 1158============================================ */
+.photo{
+  width: 100%;
+  padding: 120px 0;
+}
+.photo-team {
+  display: flex; 
+  flex-wrap:nowrap;
+  column-gap: 24px;
+  
+  justify-content: center;
+}
+.our-team{
+  width: 100%;
+}
+/* ==========================================portfolio 1158================================= */
+portfolio-photo {
+  padding-top: 120px; 
+  padding-bottom: 120px; 
+  }
+  .portfolio-photo-list {
+      width: calc((100% - 48px) / 3); 
+  
+  }
+  .portfolio-photo-product{
+    row-gap: 48px;
+  }
+  /* ============================================footer1158=================================================== */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-my{
+      
+      flex-direction: row;
+      flex-wrap:nowrap;
+      gap: 0;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+    
+  }
+  
 }
