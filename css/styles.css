@@ -2,8 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
-  min-width: 320px;
-  margin: 0 auto;
+  
+ 
 }
 
 h1,
@@ -25,12 +25,18 @@ a {
   text-decoration: none;
 }
 
+
+
+
+
+
 .container {
-  min-width: 320px;
-  padding-left: 16px; 
-  padding-right: 16px; 
-  margin: 0 auto;
-}
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 .input {
   font-family: inherit;
@@ -113,10 +119,6 @@ a {
   gap: 40px;
   /* display: flex; */
   display: none;
-}
-.header-link-menu {
-  margin-top: 72px;
-  row-gap: 40px;
 }
 
 .header-link-address {
@@ -254,14 +256,13 @@ a {
 
 .button-title:hover,
 .button-title:focus {
-  color: #404bbf;
+  
   background-color: #404bbf;
   transition-delay: 0ms, 150ms;
 }
 
 /* =============================================Description ==========================================*/
 .container-description-my {
-  /* padding: 120px 0; */
   display: flex;
   flex-direction: column;
   gap: 72px;
@@ -274,7 +275,7 @@ a {
 }
 .description-list {
   
-  width: 100%;
+  width: 288px;
 }
 
 .visually-hidden {
@@ -325,6 +326,8 @@ a {
   letter-spacing: 0.02em;
   margin-top: 8px;
   font-weight: 500;
+  width: 288px;
+
 }
 
 .icons-description {
@@ -344,8 +347,7 @@ a {
 .photo {
   background-color: #f4f4fd;
   padding: 96px 0;
-  /* padding-top: 120px; */
-  /* padding-bottom: 120px; */
+
 }
 .our-team{
   width: 296px;
@@ -378,9 +380,10 @@ a {
 }
 
 .photo-team {
-  /* display: flex; */
+  display: flex; 
+  flex-direction: column; 
   /* column-gap: 24px; */
-  column-gap: 72px;
+  row-gap: 72px;
   margin-left: auto;
   margin-right: auto;
 
@@ -587,13 +590,16 @@ a {
 .portfolio-photo-my {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 288px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+}
+.block-image{
+  width: 100%;
 }
 
 /*========================================== footer============================================ */
@@ -1031,7 +1037,7 @@ a {
   fill: #f4f4fd;
 }
 
-/* viewport-menu */
+/*========================================= viewport-menu================================================ */
 .viewport-menu {
   position: fixed;
   top: 0;
@@ -1050,17 +1056,20 @@ a {
   visibility: visible;
   pointer-events: auto;
 }
-
+.header-link-menu {
+  
+  row-gap: 40px;
+}
 .menu-window {
-  position: absolute;
+  position:fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-height: 584px;
+  
   width: 320px;
   min-height: 640px;
   background: #fff;
-  padding-left: 16px;
+  padding: 72px 16px 24px 16px;
 }
 
 .form-button-menu {
@@ -1090,13 +1099,12 @@ a {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 
 .header-link-address-menu {
-  padding-top: 168px;
+  /* padding-top: 168px; */
   row-gap: 24px;
 }
 
@@ -1155,14 +1163,11 @@ a {
   } 
 }
   
-
-@media (min-width: 768px) {
-  body{
-    min-width: 768px;
-  }
+@media screen and (min-width: 768px) {
   .container {
-    min-width: 768px; 
+  max-width: 768px;
   }
+
 
 /* ==========================================header 768 ============================================ */
 .form-button-header{
@@ -1234,7 +1239,7 @@ gap: 72px;
   flex-wrap: wrap;
   column-gap:24px;
   row-gap: 72px;
-  align-items: stretch;
+  /* align-items: stretch; */
 
 
 }
@@ -1244,13 +1249,20 @@ gap: 72px;
 }
 /* ============================================photo768========================================= */
 
+.photo{
+  display: flex;
+}
+.our-team{
+  width: 768px;
+}
 .photo-team {
   display: flex; 
-  flex-wrap: wrap;
-  width: 100%;
+  flex-wrap:wrap;
+  flex-direction:row;
+ width: 100%;
   column-gap: 24px;
   row-gap: 64px;
-  justify-content: center;
+  justify-content: center; 
 }
 /* =========================================portfolio 768==================================================== */
 
@@ -1322,15 +1334,11 @@ justify-content: center;
 }
 }
 /* ================================================1158============================================ */
-@media (min-width: 1158px) {
-  body{
-    min-width: 1158px;
-  }
+@media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   }
 
 .header-container {
@@ -1358,7 +1366,11 @@ justify-content: center;
   
 }
 /* =======================================description 1158========================================== */
+.description-list{
+  width: 264px;
+}
 .container-description {
+  width: 100%;
   flex-basis:calc((100% - 72px) / 4);
   flex-wrap:nowrap;
   column-gap:24px;
