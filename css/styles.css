@@ -203,8 +203,7 @@ a {
   background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-    url(../images/photo/people-office.jpg),
-    url(../images/photo/people-office@2x.jpg );
+    url(../images/photo/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1153,16 +1152,38 @@ a {
 }
 
 
-/*============================================768======================================= ===============*/
+/*============================================2x======================================= ===============*/
 
-@media (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi) and (max-width: 767px), 
+screen and(min-resolution: 2dppx) and (min-width: 767px),
+screen and(main-devise-pixel-ratio: 2)and (min-width: 767px) {
   .title {
     background-image: linear-gradient(to bottom,
     rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url('../images/photo/people-office@2x.jpg');
+    rgba(46, 47, 66, 0.7)), url('../images/photo/people-office-mob@2x.jpg');
   } 
 }
-  
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px), 
+screen and(min-resolution: 2dppx) and (min-width: 768px),
+screen and(main-devise-pixel-ratio: 2)and (min-width: 768px) {
+  .title {
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url('../images/photo/people-office-tab@2x.jpg');
+  } 
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px), 
+screen and(min-resolution: 2dppx) and (min-width: 1158px),
+screen and(main-devise-pixel-ratio: 2)and (min-width: 1158px) {
+  .title {
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url('../images/photo/people-office@2x.png');
+  } 
+}
+
+  /* ===================================768=============================== */
 @media screen and (min-width: 768px) {
   .container {
   max-width: 768px;
@@ -1208,6 +1229,10 @@ gap: 72px;
 .title{
   padding-top: 112px; 
   padding-bottom: 112px; 
+  background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+  url(../images/photo/people-office-tab.jpg);
 }
 .title-container {
   flex-direction: column; 
@@ -1358,6 +1383,9 @@ justify-content: center;
 }
 /* ===================================== Hero section 1158      =========================================== */
 .title{
+    background-image: linear-gradient(to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url('../images/photo/people-office.jpg');
     padding-top: 188px; 
     padding-bottom: 188px; 
 }
@@ -1433,4 +1461,4 @@ portfolio-photo {
     
   }
   
-}
+  }
