@@ -17,6 +17,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./css/styles.css" />
+  <title>JavaScript is fun!</title>
 </head>
 
 <body>
@@ -133,8 +134,7 @@
         <ul class="photo-team">
           <li class="photo-stile">
             <img
-            srcset="./images/photo/mark-guerrero.jpg 1x,
-              ./images/photo/mark-guerrero@2x.jpg 2x"
+            srcset=" ./images/photo/mark-guerrero@2x.jpg 2x"
             src="./images/photo/mark-guerrero.jpg" alt="Mark Guerrero" class="block-photo" width="264" />
             <div class="photo-name-text">
               <h3 class="photo-name">Mark Guerrero</h3>
@@ -173,8 +173,7 @@
           </li>
           <li class="photo-stile">
             <img
-            srcset="./images/photo/tom-ford.jpg 1x,
-            ./images/photo/tom-ford@2x.jpg 2x"
+            srcset="./images/photo/tom-ford@2x.jpg 2x"
             src="./images/photo/tom-ford.jpg" alt="Tom Ford" class="block-photo" width="264" />
             <div class="photo-name-text">
               <h3 class="photo-name">Tom Ford</h3>
@@ -215,8 +214,7 @@
 
           <li class="photo-stile">
             <img
-            srcset="./images/photo/camila-garcia.jpg 1x, 
-            ./images/photo/camila-garcia@2x.jpg 2x"
+            srcset="./images/photo/camila-garcia@2x.jpg 2x"
                 src="./images/photo/camila-garcia.jpg" alt="Camila Garcia" class="block-photo" width="264" />
             <div class="photo-name-text">
               <h3 class="photo-name">Camila Garcia</h3>
@@ -256,8 +254,7 @@
           </li>
           <li class="photo-stile">
             <img
-              srcset="./images/photo/daniel-wilson.jpg 1x,
-              ./images/photo/daniel-wilson@2x.jpg 2x"
+              srcset="./images/photo/daniel-wilson@2x.jpg 2x"
               src="./images/photo/daniel-wilson.jpg" alt="Daniel Wilson" class="block-photo" width="264" />
             <div class="photo-name-text">
               <h3 class="photo-name">Daniel Wilson</h3>
@@ -305,9 +302,16 @@
         <ul class="portfolio-photo-product">
           <li class="portfolio-photo-list">
             <div class="portfolio-photo-my">
-              <img src="./images/portpholio/banking-app.jpg" alt="Banking App" class="block-image" width="360" 
-              srcset="./images/portpholio/banking-app.jpg 1x,
-                ./images/portpholio/banking-app@2x.jpg 2x" />
+              <img
+              srcset="./images/portpholio-1/banking-app/banking-app-mobile.jpg 288w,
+              ./images/portpholio-1/banking-app/banking-app-mobile@2x.jpg 576w
+              ./images/portpholio-1/banking-app/banking-app-tablet.jpg 356w
+              ./images/portpholio-1/banking-app/banking-app-tablet@2x.jpg 712w
+              ./images/portpholio-1/banking-app/banking-app-desktop.jpg 360w
+              ./images/portpholio-1/banking-app/banking-app-desktop@2x.jpg 720w
+              "
+              sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                src="./images/portpholio/banking-app.jpg" alt="Banking App" class="block-image" width="360"  />
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -323,7 +327,8 @@
           <li class="portfolio-photo-list">
             <div class="portfolio-photo-my">
               <img src="./images/portpholio/cashless-payment.jpg" alt="Cashless Payment" class="block-image"
-                width="360" srcset="./images/portpholio/cashless-payment.jpg 1x, 
+                width="360" 
+                srcset="./images/portpholio/cashless-payment.jpg 1x, 
                 ./images/portpholio/cashless-payment@2x.jpg 2x" />
               <p class="overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task
@@ -606,6 +611,7 @@
         </ul>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
